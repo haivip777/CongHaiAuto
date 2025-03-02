@@ -4,15 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="item header">
-
+            <div class="logo">
+                <i class="fa fa-bars menu-icon"></i>
+                <img src="./assets/img/logo.png" alt="Car Rental Logo">
+            </div>
+    
+            <div class="search-bar">
+                <i class="fa fa-bars"></i>
+                <input type="text" placeholder="Which car do you want to refer to ?">
+                <i class="fa fa-search"></i>
+            </div>
+    
+            <nav class="nav-links">
+                <a href="#"><i class="fa fa-print"></i> Manage Booking</a>
+                <a href="#"><i class="fa fa-user"></i> Login</a>
+                <a href="#"><i class="fa fa-question-circle"></i> Help</a>
+            </nav>
         </div>
         <div class="item sidebar">
-
+            <div class="filter-title">
+                <i class="fa fa-filter"></i> Filter
+            </div>
+    
+            <!-- Price Filter -->
+            <div class="filter-group">
+                <h3>Price of Vehicle <i class="fa fa-chevron-down"></i></h3>
+                <div class="filter-options">
+                    <div class="filter-option">200M - 400M <i class="fa fa-star"></i></div>
+                    <div class="filter-option">400M - 600M <i class="fa fa-star"></i></div>
+                    <div class="filter-option">600M - 800M <i class="fa fa-star"></i></div>
+                    <div class="filter-option">800M - 1B <i class="fa fa-star"></i></div>
+                    <div class="filter-option">> 1B <i class="fa fa-star"></i></div>
+                </div>
+            </div>
+    
+            <!-- Type of Vehicle -->
+            <div class="filter-group">
+                <h3>Type of Vehicle <i class="fa fa-chevron-down"></i></h3>
+                <div class="filter-options">
+                    <div class="filter-option">Sedan <i class="fa fa-arrow-right"></i></div>
+                    <div class="filter-option">Family Car <i class="fa fa-arrow-right"></i></div>
+                    <div class="filter-option">Service Car <i class="fa fa-arrow-right"></i></div>
+                    <div class="filter-option">Couple <i class="fa fa-arrow-right"></i></div>
+                    <div class="filter-option">Electric Car <i class="fa fa-bolt"></i></div>
+                </div>
+            </div>
+    
+            <!-- Country of Origin -->
+            <div class="filter-group">
+                <h3>Country of Origin <i class="fa fa-chevron-down"></i></h3>
+                <div class="filter-options">
+                    <div class="filter-option">Germany <i class="fa fa-flag"></i></div>
+                    <div class="filter-option">Japan <i class="fa fa-flag"></i></div>
+                    <div class="filter-option">Korea <i class="fa fa-flag"></i></div>
+                    <div class="filter-option">Viet Nam <i class="fa fa-flag"></i></div>
+                </div>
+            </div>
         </div>
         <div class="item content">
             <div class="item content-title">
@@ -85,8 +139,44 @@
                         <div class="article-car-item act-5">4 chỗ</div>
                     </div>
                 </div>
+                <div class="article">
+                    <div class="article-car">
+                        <div class="article-car-item act-1">Động cơ 2.0</div>
+                        <div class="article-car-item act-2">
+                            <img class="act-img" src="./assets/img/spc1.png" alt="ảnh xe">
+                        </div>
+                        <div class="article-car-item act-3">Camry</div>
+                        <div class="article-car-item act-4">1.200.000.000 VNĐ</div>
+                        <div class="article-car-item act-5">5 chỗ</div>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article-car">
+                        <div class="article-car-item act-1">Động cơ 2.0</div>
+                        <div class="article-car-item act-2">
+                            <img class="act-img" src="./assets/img/spc2.png" alt="ảnh xe">
+                        </div>
+                        <div class="article-car-item act-3">Honda</div>
+                        <div class="article-car-item act-4">5.200.000.000 VNĐ</div>
+                        <div class="article-car-item act-5">5 chỗ</div>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article-car">
+                        <div class="article-car-item act-1">Động cơ 4.0</div>
+                        <div class="article-car-item act-2">
+                            <img class="act-img" src="./assets/img/spc3.png" alt="ảnh xe">
+                        </div>
+                        <div class="article-car-item act-3">Hyndai</div>
+                        <div class="article-car-item act-4">3.200.000.000 VNĐ</div>
+                        <div class="article-car-item act-5">7 chỗ</div>
+                    </div>
+                </div>
             </div>
             
+        </div>
+        <div class="item footer">
+
         </div>
     </div>
 </body>
