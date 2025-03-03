@@ -181,7 +181,7 @@
         display: grid;
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 50px 320px 1fr 200px;
+        grid-template-rows: 85px 320px 1fr 200px;
         grid-template-areas: 
             "header "
             "sidebar"
@@ -191,26 +191,27 @@
     
     /* header */
     .header {
-        height: 50px; /*chiều cao thanh header bị thu nhỏ*/
+        height: 85px; /*chiều cao thanh header bị thu nhỏ*/
     }
     .header .menu-icon {
         display: none;
     }
     .header .logo img {
         height: 50px; /*thu nhỏ logo*/
+        display: none; /*ẩn logo*/
     }
     .header .search-bar input {
         border: none;
         outline: none;
         background: none;
         color: white;
-        padding: 5px;
-        width: 100px; /*thu nhỏ thanh input*/
+        padding: 2px;
+        width: 120px; /*thu nhỏ thanh input*/
     }
 
     .header .search-bar {
-        padding: 3px 16px;
-        margin-right: 10px;
+        padding: 10px 16px;
+        margin-right: 20px;
     }
 
     .header .nav-links {
@@ -228,7 +229,7 @@
     .sidebar {
         grid-area: sidebar;
         position: absolute;
-        top: 50px; /*đẩy xuống 50px để không bị chồng lên header*/
+        top: 85px; /*đẩy xuống 50px để không bị chồng lên header*/
         left: 0;
         width: 100%;
         height: 320px;
@@ -252,6 +253,13 @@
     
     .content {
         border-left: none;
+    }
+
+    .content .content-title .content-title-heading {
+        color: #fff;
+        font-size: 28px;
+        margin-left: 22px;
+        line-height: 50px;
     }
      /*footer*/
     .footer {
