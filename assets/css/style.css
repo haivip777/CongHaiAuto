@@ -222,17 +222,69 @@ html {
 }
 
 .content .article-car {
+    position: relative;
     background-color: #181a1b;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     color: #fff;
     display: grid;
     height: 282px;
     grid-template-rows: 36px 120px 40px 50px 36px; 
     width: 320px;
     border-radius: 30px;
+    .content .article-car {
+        position: relative;
+        background-color: #181a1b;
+        border: 1px solid #fff;
+        color: #fff;
+        display: grid;
+        height: 282px;
+        grid-template-rows: 36px 120px 40px 50px 36px; 
+        width: 320px;
+        border-radius: 30px;
+    }
+    
+    .content .article-car:hover {
+        cursor: pointer;
+        opacity: 0.9;
+    }
+    
+    .content .article-car .article-car-item {
+        margin-left: 32px;
+    }
+    
+    .article-car .act-5,
+    .article-car .act-1 {
+        line-height: 36px;
+        font-size: 13.6px;
+    }
+    
+    .article-car .act-3 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    
+    .article-car .act-4 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    
+    .article-car .act-img {
+        height: 120px;
+        transition: transform 0.3s ease, z-index 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
+        position: relative; /* Đặt vị trí tương đối để có thể thay đổi z-index */
+        z-index: 1; /* Đặt z-index ban đầu */
+    }
+    
+    .article-car:hover .act-img {
+        transform: scale(1.3); /* Phóng to ảnh */
+        z-index: 10; /* Đặt z-index cao hơn để nằm trên các phần tử khác */
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng bóng loáng */
+    }
 }
 .content .article-car:hover {
     opacity: 0.6;
+    cursor: pointer;
 }
 
 .content .article-car .article-car-item {
@@ -255,7 +307,17 @@ html {
 }
 .article-car .act-img {
     height: 120px;
+    transition: transform 0.3s ease, z-index 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
+    position: relative; /* Đặt vị trí tương đối để có thể thay đổi z-index */
+    z-index: 1; /* Đặt z-index ban đầu */
 }
+
+.article-car:hover .act-img {
+    transform: scale(1.3); /* Phóng to ảnh */
+    z-index: 10; /* Đặt z-index cao hơn để nằm trên các phần tử khác */
+    cursor: pointer;
+}
+
 
 /* footer */
 .footer {
